@@ -12,3 +12,9 @@ spring:
     properties:
       hibernate:
         format_sql: true
+twilio:
+  sid: ${TWILIO_SID}
+  key: ${TWILIO_KEY}
+  phone:
+    from: ${TWILIO_PHONE_FROM}
+    to: ${TWILIO_PHONE_TO}
