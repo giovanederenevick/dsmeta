@@ -45,6 +45,10 @@ public class SMSService {
 
         Message message = Message.creator(to, from, msg.toString()).create();
 
+        log.info("twilioSid:" + twilioSid);
+        log.info("twilioKey:" + twilioKey);
+        log.info("twilioPhoneFrom:" + twilioPhoneFrom);
+        log.info("twilioPhoneTo:" + twilioPhoneTo);
         log.info(message.getSid());
     }
 }
